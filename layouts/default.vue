@@ -1,14 +1,16 @@
 <template>
-  <div class="default">
+  <div id="default">
     <div class="h-16 bg-black">
       <div class="container h-full mx-auto flex justify-between items-center">
-        <div class="hamburger h-100">
+        <div class="hamburger">
           <img :src="menu" alt="menu icon" />
         </div>
-        <img :src="logo" alt="RS-Logo" class="h-6 block" />
+        <img :src="logo" alt="RS-Logo" class="h-6 block mr-3" />
       </div>
     </div>
-    <Nuxt></Nuxt>
+    <div class="container mx-auto bg-black wrapper">
+      <Nuxt></Nuxt>
+    </div>
   </div>
 </template>
 
@@ -28,4 +30,18 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+#default {
+  @apply h-full;
+
+  .hamburger {
+    @apply w-16 h-16 flex justify-center items-center;
+    background-color: #161616;
+  }
+
+  .wrapper {
+    height: calc(100% - 64px);
+    padding-bottom: 30px;
+  }
+}
+</style>

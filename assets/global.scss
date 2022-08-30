@@ -16,8 +16,16 @@
     url(~assets/fonts/ttf/Manrope-Light.ttf) format('truetype');
 }
 
+html,
+body,
+#__layout,
+#__nuxt {
+  @apply h-full;
+}
+
 html {
   font-family: 'Manrope';
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #44444b;
   backdrop-filter: blur(200px);
+  color: white;
 }

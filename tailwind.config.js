@@ -1,6 +1,4 @@
-import { Config } from 'tailwindcss'
-
-export default <Config>{
+module.export = {
   purge: [],
   content: [`components/**/*.{vue,ts}`, `layouts/**/*.vue`, `pages/**/*.vue`],
   darkMode: false, // or 'media' or 'class'
