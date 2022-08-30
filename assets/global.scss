@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope'),
+    url(~assets/fonts/ttf/Manrope-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Manrope-Bold';
+  src: local('Manrope-Bold'),
+    url(~assets/fonts/ttf/Manrope-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Manrope-Light';
+  src: local('Manrope-Light'),
+    url(~assets/fonts/ttf/Manrope-Light.ttf) format('truetype');
+}
+
+html {
+  font-family: 'Manrope';
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(200px);
+}
